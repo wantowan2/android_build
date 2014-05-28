@@ -236,9 +236,6 @@ endif
 $(call import-products, $(current_product_makefile))
 endif  # Import all or just the current product makefile
 
-# Sanity check
-$(check-all-products)
-
 ifneq ($(filter dump-products, $(MAKECMDGOALS)),)
 $(dump-products)
 $(error done)
